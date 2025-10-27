@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projeto Amigos Peludos — ONG</title>
+  <meta name="description" content="Plataforma para ONGs de proteção animal — projetos, voluntariado e doações." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="brand">Amigos Peludos</h1>
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul id="menu" class="menu" aria-hidden="true">
+          <li><a href="index.html" class="active">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section class="hero" aria-label="Apresentação">
+      <div class="hero-content">
+        <h2>Transformando vidas — um animal de cada vez</h2>
+        <p>Plataforma de exemplo construída para ONGs — gerencie projetos, engaje voluntários e capte doações.</p>
+        <p><a class="btn" href="projetos.html">Conheça nossos projetos</a> <a class="btn ghost" href="cadastro.html">Seja voluntário</a></p>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="sobre-title">
+      <h3 id="sobre-title">Nossa missão</h3>
+      <p>Oferecer cuidado, reabilitação e adoção para animais em situação de vulnerabilidade, além de promover educação e conscientização na comunidade.</p>
+    </section>
+
+    <section class="highlights" aria-labelledby="destaques-title">
+      <h3 id="destaques-title">Destaques</h3>
+      <div class="grid">
+        <article class="card" aria-labelledby="card1-title">
+          <h4 id="card1-title">Campanhas de vacinação</h4>
+          <p>Campanhas regulares em comunidades de baixa renda.</p>
+        </article>
+        <article class="card" aria-labelledby="card2-title">
+          <h4 id="card2-title">Castração</h4>
+          <p>Projeto de controle populacional e cuidados veterinários.</p>
+        </article>
+        <article class="card" aria-labelledby="card3-title">
+          <h4 id="card3-title">Adoção responsável</h4>
+          <p>Processo de seleção e acompanhamento pós-adoção.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter" aria-labelledby="news-title">
+      <h3 id="news-title">Newsletter</h3>
+      <form class="inline-form" action="#" onsubmit="alert('Obrigado por se inscrever!'); return false;" aria-label="Inscrição na newsletter">
+        <label for="email-news" class="sr-only">Email</label>
+        <input id="email-news" name="email" type="email" required placeholder="seu@email.com" />
+        <button class="btn" type="submit">Inscrever</button>
+      </form>
+    </section>
+
+    <section id="contato" class="contact" aria-labelledby="contato-title">
+      <h3 id="contato-title">Contato</h3>
+      <address>
+        <p>Rua dos Bichos, 123 • Florianópolis • SC</p>
+        <p>Email: <a href="mailto:amigospeludos@gmail.org">contato@amigospeludos.org</a></p>
+        <p>Telefone: <a href="tel:+5511999999999">+55 (11) 99999-9999</a></p>
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> Amigos Peludos — Transparência e cuidado. <a href="projetos.html">Projetos</a> • <a href="cadastro.html">Cadastro</a></p>
+    </div>
+  </footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

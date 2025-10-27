@@ -1,0 +1,81 @@
+/* Paleta: tons de marrom profissional */
+:root{
+  --brown-900: #4b2e2b;
+  --brown-700: #7a4f46;
+  --brown-500: #a57a6f;
+  --brown-300: #d6c2bb;
+  --cream: #f7f3ef;
+  --accent: #8aa29e;
+  --max-width: 1100px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,var(--cream), #fff);
+  color: var(--brown-900);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem;}
+
+/* header */
+.site-header{background:var(--brown-900);color:var(--cream);position:sticky;top:0;z-index:20;box-shadow:0 2px 8px rgba(0,0,0,0.12)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem;}
+.brand{margin:0;font-size:3rem;letter-spacing:0.4px}
+
+/* Nav centralizado */
+.main-nav{display:flex;align-items:center;gap:1rem}
+.nav-toggle{display:none}
+.menu{list-style:none;margin:0;padding:0;display:flex;gap:0.5rem;align-items:center}
+.menu a{display:block;padding:0.5rem 0.9rem;border-radius:10px;color:var(--cream);text-decoration:none;font-weight:600}
+.menu a:hover, .menu a.active{background:rgba(255,255,255,0.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.02)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 320px;gap:1rem;align-items:center;padding:2rem 0}
+.hero h2{font-size:1.6rem;margin:0 0 .5rem;color:var(--brown-700)}
+.hero-figure img{width:100%;max-width:400px;display:block}
+
+/* sections */
+h3{color:var(--brown-700)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:0.5rem}
+.card{background:linear-gradient(180deg,var(--brown-300),#fff);padding:1rem;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+
+/* forms */
+.form{background:#fff;padding:1rem;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06);margin-bottom:2rem}
+.form fieldset{border:0;margin:0;padding:0 0 1rem}
+.form label{display:block;margin-top:0.5rem;font-weight:600}
+.form input,.form select,.form textarea{width:100%;padding:0.6rem;border:1px solid #ddd;border-radius:8px;margin-top:0.25rem}
+.row{display:flex;gap:1rem}
+.row > div{flex:1}
+
+/* buttons */
+.btn{display:inline-block;padding:0.6rem 1rem;border-radius:10px;background:var(--brown-700);color:var(--cream);text-decoration:none;font-weight:700;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--brown-700);border:1px solid var(--brown-300)}
+
+/* footer */
+.site-footer{padding:1rem 0;text-align:center;color:var(--brown-700);font-size:0.9rem}
+
+/* accessibility & helper */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{position:absolute;left:0;top:-40px;background:#000;color:#fff;padding:8px;z-index:999;transition:top .25s ease}
+.skip-link:focus{top:8px}
+
+/* responsive mobile-first */
+@media (max-width:800px){
+  .hero{grid-template-columns:1fr;gap:1rem}
+  .grid{grid-template-columns:1fr;align-items:stretch}
+  .header-inner{padding:0.5rem}
+  .menu{position:absolute;left:0;right:0;top:56px;background:var(--brown-900);flex-direction:column;padding:1rem;display:none;border-top:1px solid rgba(255,255,255,0.03)}
+  .menu.show{display:flex}
+  .nav-toggle{display:block;background:transparent;border:0;color:var(--cream);font-weight:700}
+  .row{flex-direction:column}
+}
+
+/* animations suaves */
+*{transition:all .22s cubic-bezier(.2,.9,.3,1)}
+.menu a{transform:translateY(0)}
+.menu a:hover{transform:translateY(-3px)}
+.card{transform-origin:center}

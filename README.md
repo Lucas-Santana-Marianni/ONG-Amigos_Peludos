@@ -1,1 +1,1 @@
-# ONG-Amigos_Peludos
+# Projeto: Amigos Peludos\n\nSite de exemplo para disciplina, pronto para subir no GitHub.
