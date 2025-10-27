@@ -1,1 +1,2 @@
-# Projeto: Amigos Peludos\n\nSite de exemplo para disciplina, pronto para subir no GitHub.
+# Projeto: Amigos Peludos
+Site de exemplo para disciplina, pronto para subir no GitHub.
